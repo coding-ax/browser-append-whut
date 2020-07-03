@@ -162,9 +162,11 @@ setInterval(() => {
         // 首先查找周*
         // console.log(timeString);
         let day = timeString.match(/周[一二三四五六日]/g);
-        for (let d of day) {
-          let x = dayToX[d];
-          temp["placeX"].push(x);
+        if (day != null) {
+          for (let d of day) {
+            let x = dayToX[d];
+            temp["placeX"].push(x);
+          }
         }
 
         // 查找y
