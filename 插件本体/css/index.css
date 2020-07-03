@@ -1,0 +1,64 @@
+.frame {
+    /* 布局定位 */
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99999;
+    width: 500px;
+    height: 270px;
+    /* 设置细节 */
+    opacity: 0.7;
+    pointer-events: none;
+    border-radius: 15px;
+    border: 1px solid coral;
+}
+
+
+.current-table {
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.show-date {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.date {
+    width: 14.3%;
+}
+
+.show-count {
+    width: 15px;
+    height: 280px;
+}
+
+.count {
+    height: 50px;
+}
+
+.show-lesson {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.slist {
+    width: 65px;
+    height: 300px;
+}
+
+.lesson {
+    border: 1px solid;
+    height: 16%;
+}
+
+.content-name {
+    color: coral;
+    overflow: hidden;
+    font-weight: bold;
+}

@@ -3,16 +3,21 @@
   "version": "1.0",
   "manifest_version": 2,
   "content_scripts": [
-    { "matches": ["http://218.197.102.183/Course/*"], "js": ["index.js"] }
+    {
+      "matches": ["http://218.197.102.183/Course/*"],
+      "js": ["js/index.js", "js/lfx.js"],
+      "css": ["css/index.css"],
+      "run_at": "document_end"
+    }
   ],
 
-  "browser_action":{
-      "default_icon":"head.png",
-      "default_popup":"popup.html"
+  "browser_action": {
+    "default_icon": "./head.png",
+    "default_popup": "popup.html"
   },
-  "icons":{
-      "16":"head.png",
-      "32":"head.png",
-      "128":"head.png"
+  "icons": {
+    "16": "./head.png",
+    "32": "./head.png",
+    "128": "./head.png"
   }
 }
