@@ -196,6 +196,21 @@ setInterval(() => {
   }
   // console.log(res);
   // 根据res进行div的写入
+  // 每次写入前都应该进行清空
+
+  for (let i = 1; i <= 7; i++){
+    for (let j = 1; j <= 5; j++){
+      let parent = document.querySelector(
+        "#place" + i + j
+      );
+      // console.log(parent);
+      parent.innerHTML = `
+      <div></div>
+      `;
+    }
+  }
+
+
   // 开始写入:
   res.forEach((item) => {
     // 写入开始

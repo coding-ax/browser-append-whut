@@ -23,7 +23,8 @@
 // 主生命周期
 (function () {
   // 变量声明
-  var requestInterval = 500; // 请求时间间隔（毫秒）
+  // var requestInterval = 500; // 请求时间间隔（毫秒）
+  var requestInterval = 10000; // 请求时间间隔（毫秒）
   var count = 0;
 
   /*
@@ -169,6 +170,7 @@
   function sendData(postData) {
     var obj = postData;
     // 每0.5秒发送一次
+    toastr.info("当前选课开始，请等待");
     setInterval(function (obj) {
       // 输出数据到控制台
       console.log("准备发包");
@@ -222,7 +224,7 @@
     "请先选择要抢的课，然后点击抢课按钮进行抢课！",
     "抢课按钮注入完成"
   );
-  toastr.info("点击后将于每0.5秒执行一次抢课操作");
+  toastr.info(`点击后将于每${requestInterval/1000}秒执行一次抢课操作`);
 
   // 控件注入
   setInterval(function () {
