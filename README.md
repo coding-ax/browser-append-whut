@@ -3,7 +3,7 @@
 武汉理工大学选课去 30s（代码很简单，改成浏览器插件可避免 F12 重复输入）
 新增预览课表功能：每 5S 刷新一次（耐心等一哈）
 
-[阿里云下载地址：](http://xgpax.top/files/%E6%8F%92%E4%BB%B6%E6%9C%AC%E4%BD%93.zip)  
+[阿里云下载地址：](https://xgpax.top/download/wp-content/files/%E6%8F%92%E4%BB%B6%E6%9C%AC%E4%BD%93.zip)  
 关于抢课，项目引入了某超级聚聚的不愿意透露姓名的 demo
 
 #### 效果预览
